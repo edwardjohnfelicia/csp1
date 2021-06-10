@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Georgia', serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.bghome {
+  /* The image used */
+  background-color: gray;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgabout {
+  /* The image used */
+  background-image: url("images/bg2.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+}
+.bgprojects {
+  /* The image used */
+  background-image: url("images/bg1.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding-bottom: 3%;
+    border: 0;
+}
+
+.titles {
+	padding: 5%;
+	text-align: center;
+}
