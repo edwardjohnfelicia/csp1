@@ -16,7 +16,7 @@
 		Edward John Felicia | Full Stack Web Developer
 	</title>
 </head>
-<body">
+<body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	    <a href="#" class="navbar-brand">Edward John Felicia
@@ -30,13 +30,23 @@
 	            <a href="#home" class="nav-item nav-link active">Home</a>
 	            <a href="#about" class="nav-item nav-link">About</a>
 	            <a href="#projects" class="nav-item nav-link">Projects</a>
-	            <a href="#contacts" class="nav-item nav-link">Contacts</a>
+	            <a href="#tools" class="nav-item nav-link">Tools</a>
+	            <a href="#contacts" class="nav-item nav-link">Contact Me!</a>
 	        </div>
 	    </div>
 	</nav>
+	
 
-	<section class="bghome" id="home">
-		<div id="carouselExampleCaptions" class="carousel slide bg-secondary" data-ride="carousel">
+		<video width="100%" playsinline autoplay muted loop poster="images/bg1.jpg" id="bgvid">
+		  <source src="videos/darkintro.mp4" type="video/mp4">
+		</video>
+
+	<div class="overlay container-fluid"  id="home">
+	  <h2>Hi! I am EJ Felicia. I develop a functional and well-designed website.</h2>
+	</div>
+
+	<section class="parallax2">
+		<div id="carouselExampleCaptions" class="carousel slide p-5" data-ride="carousel">
 		  <ol class="carousel-indicators">
 		    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 		    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -46,22 +56,22 @@
 		    <div class="carousel-item active">
 		      <img src="images/webdev.png" class="d-block w-100" alt="...">
 		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Full Stack Web Development</h5>
-		        <p>HTML | CSS | Bootstrap</p>
+		        <h3>Full Stack Web Development</h3>
+		        <h5>HTML | CSS | Bootstrap</h5>
 		      </div>
 		    </div>
 		    <div class="carousel-item">
 		      <img src="images/socmed.png" class="-block w-100" alt="...">
 		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Social Media Advertising</h5>
-		        <p>Facebook</p>
+		        <h3>Social Media Advertising</h3>
+		        <h5>Facebook</h5>
 		      </div>
 		    </div>
 		    <div class="carousel-item">
 		      <img src="images/engg.png" class="d-block w-100" alt="...">
 		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Mechanical Engineering</h5>
-		        <p>Maintenance | Production</p>
+		        <h3>Mechanical Engineering</h3>
+		        <h5>Maintenance | Production</h5>
 		      </div>
 		    </div>
 		  </div>
@@ -76,18 +86,24 @@
 		</div>
 	</section>
 
-	<section class="bgabout" id="about">
-		<div class="container-fluid">
-		<h3 class="display-5 titles"><strong>About Me</strong></h3>
-		<div class="card p-4">
+	<div class="bg-secondary" id="about">
+		<h3 class="display-4 titles text-light"><strong>About Me</strong></h3>
+	</div>
+
+	<section class="parallax">
+		<div class="container-fluid pl-3 pr-3 pt-5 pb-5">
+		<div class="card p-1">
 		    <div class="row no-gutters">
-		        <div class="col-sm-5">
-		            <img src="images/profile.jpg" class="card-img-top h-100" alt="...">
+		        <div class="col-xl-5 col-lg-12">
+		            <img src="images/profile.jpg" class="card-img-top" alt="...">
 		        </div>
-		        <div class="col-sm-7">
+		        <div class="col-xl-7 col-lg-12">
 		            <div class="card-body">
-		                <h5 class="card-title">Edward John Felicia</h5>
-		                <p class="card-text text-justify">I am a mechanical engineer currently learning to be a full-stack developer. I am currently under Zuitt bootcamp and about to finish with the front-end development.</p>
+		                <h4 class="card-title"><strong>Engr. Edward John Felicia</strong></h4>
+		                <h5 class="card-text text-justify"> I am a mechanical engineer currently transitioning to a software engineer. I am currently under Zuitt Bootcamp and about to finish the front-end development with this portfolio as my end project. I am so excited to study the backend side of web development because I feel this is where I can use my problem solving skills.</h5>
+		                <h5 class="card-text text-justify">Before, I was an engineering management trainee of one of the top food manufacturing company here in the Philippines. Last year, during the pandemic, I was promoted to production supervisor and was able to won the line of the year award. But with all of that, I am still not satisfied with where I am going and that's why I decided to take a leap of fait, a reset and study software engineering.</h5>
+		                <h5 class="card-text text-justify">I am very interested in programming, business, finance and leadership. Recently, I was able to use all my interest as I currently manage a social media page as marketing coordinator of a molecular laboratory in Metro Manila as we offer RT-PCR Swab test and the like to people who were required by private or public entities for a specific purpose.</h5>
+		                <h5 class="card-text text-justify">As the world was forced to digitalization, I am already adapating and learning to use my skills and interests to tackle real world or business problems through software engineering.</h5>
 		            </div>
 		        </div>
 		    </div>
@@ -95,71 +111,105 @@
 		</div>
 	</section>
 
-	<section class="bgprojects container-fluid" id="projects">
-		<h3 class="display-5 text-center titles text-warning "><strong>Projects</strong></h3>
-		<div class="container-fluid">
-		<div class="jumbotron jumbotron-fluid">
-		    <div class="container">
-		        <h1>Capstone 1</h1>
-		        <p class="lead">Creation of web developer portfolio</p>
-		        <!--
-		        <p><a href="#" class="btn btn-primary btn-lg bg-dark">View Details</a></p>
-		        -->
-		        <div class="progress">
-		            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%"></div>
-		        </div>
-		    </div>
-		</div>
+	<div class="bg-secondary" id="projects">
+		<h3 class="display-4 titles text-light"><strong>Projects</strong></h3>
+	</div>
 
-		<div class="jumbotron jumbotron-fluid">
-		    <div class="container">
-		        <h1>Capstone 2</h1>
-		        <p class="lead">Still in development...</p>
-		        <!-- 
-		        <p><a href="#" class="btn btn-primary btn-lg bg-dark">View Details</a></p>
-		        -->
-		        <div class="progress">
-		            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 20%"></div>
-		        </div>
-		    </div>
-		</div>
+	<section class="parallax3">
+		<div class="container-fluid p-5">
+			<div class="row">
+				<div class="col-lg col-xl-4 jumbotron jumbotron-fluid pl-2 pr-2">
+				    <div class="container">
+				    	<img src="images/frontend.jpg" class="img-fluid pb-3">
+				    	<div class="progress">
+				    	    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%"></div>
+				    	</div>
+				        <h2>Capstone 1 : Front End Development</h2>
+				        <p class="lead">Development of portfolio</p>
+				        <!--
+				        <p><a href="#" class="btn btn-primary btn-lg bg-dark">View Details</a></p>
+				        -->
+				    </div>
+				</div>
 
-		<div class="jumbotron jumbotron-fluid ">
-		    <div class="container">
-		        <h1>Capstone 3</h1>
-		        <p class="lead">Still in development...</p>
-		        <!--
-		        <p><a href="#" class="btn btn-primary btn-lg bg-dark">View Details</a></p>
-		        -->
-		        <div class="progress">
-		            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 10%"></div>
-		        </div>
-		    </div>
+				<div class="col-lg col-xl-4 jumbotron jumbotron-fluid pl-2 pr-2">
+				    <div class="container">
+				    	<img src="images/backend.jpg" class="img-fluid pb-3">
+				    	<div class="progress">
+				    	    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 20%"></div>
+				    	</div>
+				        <h2>Capstone 2: Back End Development</h2>
+				        <p class="lead">Still in progress...</p>
+				        <!-- 
+				        <p><a href="#" class="btn btn-primary btn-lg bg-dark">View Details</a></p>
+				        -->
+				    </div>
+				</div>
+
+				<div class="col-lg col-xl-4 jumbotron jumbotron-fluid pl-2 pr-2">
+				    <div class="container">
+				    	<img src="images/fullstack.jpg" class="img-fluid pb-3">
+				    	<div class="progress">
+				    	    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 10%"></div>
+				    	</div>
+				        <h2>Capstone 3: Full Stack Development</h2>
+				        <p class="lead">Still in progress...</p>
+				        <!--
+				        <p><a href="#" class="btn btn-primary btn-lg bg-dark">View Details</a></p>
+				        -->
+				    </div>
+				</div>
+			</div>
 		</div>
+	</section>
+
+	<div class="bg-secondary" id="tools">
+		<h3 class="display-4 titles text-light"><strong>Tools I Use</strong></h3>
+	</div>
+
+<section class="text-center parallax5">
+		<div class="d-flex flex-wrap flex-lg-nowrap justify-content-center align-self-center pb-3 pt-3">
+			<div>
+				<img src="images/html5.png" class="img-fluid" width="80" alt="html5">
+			</div>
+			<div>
+				<img src="images/css3.png" class="img-fluid" width="80" alt="css3">
+			</div>
+			<div>
+				<img src="images/bootstrap.png" class="img-fluid" width="80" alt="bootstrap">
+			</div>
+			<div>
+				<img src="images/gitlab.png" class="img-fluid" width="80" alt="gitlab">
+			</div>
+			<div>
+				<img src="images/github.png" class="img-fluid" width="70" alt="github">
+			</div>
 		</div>
 	</section>
 
 
-	<section id="contacts">
-		<div class="container-fluid">
-		<h3 class="display-5 titles"><strong>Contact Me!</strong></h3>
-	<div class="container-fluid">
+	<div class="bg-secondary" id="contacts">
+		<h3 class="display-4 titles text-light"><strong>Contact Me!</strong></h3>
+	</div>
+
+	<section class="parallax4">
+	<div class="container-fluid pb-4">
 		<!-- First Row -->
 		<div class="row">
-			<div class="col-md col-lg-6">
+			<div class="col-md col-lg-6 pb-4">
 				<form>
 				  <div class="form-group">
-				    <label for="FullName">Email address</label>
+				    <label for="FullName"><strong>Full name</strong></label>
 				    <input type="email" class="form-control" id="FullName" placeholder="Juan Dela Cruz">
 				  </div>
 
 				  <div class="form-group">
-				    <label for="EmailAddress">Email address</label>
+				    <label for="EmailAddress"><strong>Email address</strong></label>
 				    <input type="email" class="form-control" id="EmailAddress" placeholder="name@example.com">
 				  </div>
 
 				  <div class="form-group">
-				    <label for="Message">How Can I Help?</label>
+				    <label for="Message"><strong>How Can I Help?</strong></label>
 				    <textarea class="form-control" id="Message" rows="3"></textarea>
 				  </div>
 				  <div class="mb-3 text-center">
@@ -177,28 +227,35 @@
 	</section>
 
 	<section id="pre-footer">
-		<div class="container-fluid p-3 bg-dark text-light">
+		<div class="container-fluid p-3 bg-secondary text-light">
 			<div class="row">
 				<div class="col-sm col-md-6 ">
 					<div class="row justify-content-center">
 						<h3>Follow Me!</h3>
 					</div>
 					<div class="row justify-content-center">
-					<a href="https://www.linkedin.com/in/edward-felicia/">LinkedIn</a>
+						<a href="https://www.facebook.com/EJ.Felicia/" target="_blank">
+						<img src="images/facebook.svg" alt="facebook" style="width:42px;height:42px;">
+							</a>
+					</div>
+					<div class="row justify-content-center">
+						<a href="https://www.linkedin.com/in/edward-felicia/" target="_blank">
+						<img src="images/linkedin.svg" alt="facebook" style="width:42px;height:42px;">
+						</a>
 					</div>
 				</div>
 				<div class="col-sm col-md-6">
 					<div class="row justify-content-center">
-						<h3>Contact Details</h3>
+						<h3>Contact Me!</h3>
 					</div>
 					<div class="row justify-content-center">
-						<p>0961-XXX-XXXX (Smart)</p>
+						<p>+63 961-XXX-XXXX</p>
 					</div>
 					<div class="row justify-content-center">
-						<p>0915-XXX-XXXX (Globe)</p>
+						<p>+63 915-XXX-XXXX </p>
 					</div>
 					<div class="row justify-content-center">
-					<a href="mailto: edwardjohnfelicia@gmail.com">Send Email</a>
+					<a id="email" href="mailto: edwardjohnfelicia@gmail.com">Send Email</a>
 					</div>
 
 				</div>
@@ -207,7 +264,7 @@
 	</section>
 
 	<footer>
-		<div class="container-fluid bg-secondary text-light">
+		<div class="container-fluid bg-dark text-light">
 			<div class="row text-center">
 				<div class="col-md-4">Terms of Services</div>
 				<div class="col-md-4">Privacy Policy</div>
