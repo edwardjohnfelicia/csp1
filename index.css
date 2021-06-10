@@ -132,3 +132,13 @@ video {
     padding: 5px 15px;
     text-align: center;
 }
+
+#email {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#icon {
+	width:42px;
+	height:42px;
+}
