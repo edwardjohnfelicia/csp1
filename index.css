@@ -142,3 +142,15 @@ video {
 	width:42px;
 	height:42px;
 }
+
+#bar1 {
+	width: 90%;
+}
+
+#bar2 {
+	width: 20%;
+}
+
+#bar3 {
+	width: 10%;
+}
