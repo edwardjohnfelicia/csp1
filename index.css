@@ -38,22 +38,9 @@ body, html {
     border: 0;
 }
 
-.titles {
-	text-align: center;
-	border-color: gray;
-	height: 100%;
-	margin: 0;
-}
-
 .parallax {
   /* The image used */
   background-image: url("images/c.png");
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .parallax2 {
@@ -91,11 +78,6 @@ body, html {
 .parallax5 {
   /* The image used */
   background-image: url("images/tools.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .container {
@@ -122,15 +104,20 @@ video {
   justify-content: center;
 }
 
-.overlay h2 {
+.overlay h4 {
     background: #000 none repeat scroll 0 0;
     color: silver;
     font-weight: 1;
-    font-size: 50px;
+    font-size: 30px;
     margin: 2rem 3rem 0;
     mix-blend-mode: screen;
     padding: 5px 15px;
     text-align: center;
+}
+
+.overlay h4 a {
+	color: gold;
+	text-decoration: none;
 }
 
 #email {
@@ -153,4 +140,16 @@ video {
 
 #bar3 {
 	width: 10%;
+}
+
+.titlefooter {
+	background-position: center;
+	color: black; 
+}
+
+.titles {
+	text-align: center;
+	border-color: black;
+	height: 100%;
+	margin: 0;
 }
