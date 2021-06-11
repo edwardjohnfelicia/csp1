@@ -41,6 +41,11 @@ body, html {
 .parallax {
   /* The image used */
   background-image: url("images/c.png");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax2 {
@@ -78,6 +83,11 @@ body, html {
 .parallax5 {
   /* The image used */
   background-image: url("images/tools.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -143,8 +153,9 @@ video {
 }
 
 .titlefooter {
+	background-color: black;
 	background-position: center;
-	color: black; 
+	color: white; 
 }
 
 .titles {
