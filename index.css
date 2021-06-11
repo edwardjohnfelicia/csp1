@@ -131,7 +131,7 @@ video {
 }
 
 #email {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -156,6 +156,7 @@ video {
 	background-color: black;
 	background-position: center;
 	color: white; 
+	opacity: 80%;
 }
 
 .titles {
@@ -163,4 +164,15 @@ video {
 	border-color: black;
 	height: 100%;
 	margin: 0;
+}
+
+.navbar {
+	opacity: 80%;
+}
+
+.opacprefoot {
+	background-color: black;
+	background-position: center;
+	color: white; 
+	opacity: 50%;
 }
