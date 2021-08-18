@@ -141,15 +141,15 @@ video {
 }
 
 #bar1 {
-	width: 90%;
+	width: 100%;
 }
 
 #bar2 {
-	width: 20%;
+	width: 50%;
 }
 
 #bar3 {
-	width: 10%;
+	width: 100%;
 }
 
 .titlefooter {
